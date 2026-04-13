@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>French Poem Generator</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
 
             <div class="main-part">
 
-                <form class="submit-form">
+                <form class="submit-form" id="poem-generator-form">
                 <input type="text" class="theme-input" placeholder="What is the poem about?" 
                 autofocus
                 required
@@ -24,11 +25,8 @@
                  <input type="submit" class="submit1" value="Submit"/>
                 </form>
 
-                 <div class="poem-text">
-                 Elle est retrouvée.<br/>
-                 Quoi? - L'Éternité.<br/>
-                 C'est la mer allée <br/>
-                 Avec le soleil.
+                 <div class="poem-text" id="poem">
+                 
                  </div>
             </div>
             <footer>
@@ -41,6 +39,6 @@
 
      
    
-    <script src="src/index.js"></script>
+    <script src="src/index.js" defer></script>
 </body>
 </html>
