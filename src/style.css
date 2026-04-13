@@ -1,0 +1,15 @@
+.hero {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:hsl(174, 60%, 75%);
+background-image:
+radial-gradient(at 20% 30%, hsla(175, 70%, 78%, 0.8) 0%, hsla(175, 70%, 78%, 0) 80%),
+    radial-gradient(at 80% 20%, hsla(170, 65%, 70%, 0.7) 0%, hsla(170, 65%, 70%, 0) 50%),
+    radial-gradient(at 60% 80%, hsla(180, 60%, 85%, 0.6) 0%, hsla(180, 60%, 85%, 0) 80%),
+    radial-gradient(at 10% 90%, hsla(165, 55%, 72%, 0.7) 0%, hsla(165, 55%, 72%, 0) 80%),
+    radial-gradient(at 90% 70%, hsla(178, 65%, 80%, 0.6) 0%, hsla(178, 65%, 80%, 0) 50%);
+ background-blend-mode: screen;
+}
