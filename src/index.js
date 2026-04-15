@@ -21,6 +21,17 @@ let prompt =`Generate a French poem about ${instructionsInput.value}`;
 let context = "You are a French romantic poet. Write a 4-line poem in basic HTML, separating the lines with a br/. Don't include any other symbols, quote marks, html tag, only the poem text. Sign the poem with `SheCodes Ai` inside a <strong> element";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
+let poemElement = document.querySelector("#poem")
+ poemElement.innerHTML = `
+    <div class="loading">
+      <span class="generating">Generating your French poem about "${instructionsInput.value}"</span>
+      <span class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+  `;
 axios.get(apiUrl).then(displayPoem);
 
    
